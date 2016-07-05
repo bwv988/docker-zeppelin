@@ -1,7 +1,5 @@
 # Apache Zeppelin Docker
 
-![Apache Zeppelin logo](https://zeppelin.apache.org/assets/themes/zeppelin/img/zeppelin_logo.png)
-
 Run Apache Zeppelin in a docker environment.
 
 This is currently under development.

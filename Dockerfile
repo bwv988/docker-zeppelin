@@ -88,12 +88,18 @@ RUN R CMD BATCH /opt/inst.R /tmp/inst.R.out
 # when using a poor internet connection.
 ENV PATH $ZEPPELIN_HOME/bin:$PATH
 ADD zeppelin-0.6.0-bin-all.tgz /opt
+
 COPY zeppelin-entrypoint.sh /entrypoints/zeppelin-entrypoint.sh
+COPY hadoop_config.sh /hadoop_config.sh
+COPY service_wait.sh /service_wait.sh
+
 RUN mv /opt/zeppelin-0.6.0-bin-all $ZEPPELIN_HOME && \
     mkdir $ZEPPELIN_HOME/logs && \
     mkdir $ZEPPELIN_HOME/run && \
-    chmod a+x /entrypoints/zeppelin-entrypoint.sh
-
+    chmod a+x /entrypoints/zeppelin-entrypoint.sh && \
+    chmod a+x /hadoop_config.sh && \
+    chmod a+x /service_wait.sh
+    
 # Compact container.
 RUN rm -rf /root/.m2 && \
     rm -rf /root/.npm && \

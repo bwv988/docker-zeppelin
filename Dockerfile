@@ -2,14 +2,14 @@
 #
 # Starting the container:
 #
-# docker run --rm -p 9090:9090 analytics/docker-zeppelin
+# docker run --rm -p 9090:9090 bwv988/docker-zeppelin
 #
 # Debugging:
 #
-# docker run --rm -it --entrypoint=bash analytics/docker-zeppelin
+# docker run --rm -it --entrypoint=bash bwv988/docker-zeppelin
 #
 
-FROM analytics/ds-spark-base
+FROM bwv988/ds-spark-base
 
 MAINTAINER ralph.schlosser@gmail.com
 
@@ -64,7 +64,7 @@ RUN mv /opt/${ZEPPELIN}-bin-all $ZEPPELIN_HOME && \
     mkdir $ZEPPELIN_HOME/logs && \
     mkdir $ZEPPELIN_HOME/run && \
     chmod a+x /entrypoints/zeppelin-entrypoint.sh && \
-    chmod a+x /entrypoints/inject_hive_cfg.py && \
+    chmod a+x /entrypoints/inject_interpreter_cfg.py && \
     rm -rf /root/.m2 && \
     rm -rf /root/.npm && \
     rm -rf /opt/rscala_1.0.6.tar.gz

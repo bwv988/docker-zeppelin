@@ -1,10 +1,11 @@
 # Apache Zeppelin Docker
 
+## About
+
 Run Apache Zeppelin in a docker environment.
 
-This is currently under development.
+This is based on the Spark docker images for data science.
 
-## Open issues
+## Version
 
-- Re-factor to use debian:jessie or hadoop image as new base.
-- Look into Zeppelin build issue w./ poor internet connection.
+Apache Zeppelin 0.6.1 with all interpreters.

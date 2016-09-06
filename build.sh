@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMGPREFIX=analytics
+IMGPREFIX=bwv988
 IMGNAME=docker-zeppelin
 IMG="${IMGPREFIX}/${IMGNAME}"
 

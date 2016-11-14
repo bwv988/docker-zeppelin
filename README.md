@@ -1,5 +1,7 @@
 # Apache Zeppelin Docker
 
+[![Build Status](https://api.travis-ci.org/bwv988/docker-zeppelin.svg?branch=master)](https://api.travis-ci.org/bwv988/docker-zeppelin.svg?branch=master)
+
 ## About
 
 Run Apache Zeppelin in a docker environment.

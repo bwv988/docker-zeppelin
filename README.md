@@ -1,6 +1,6 @@
 # Apache Zeppelin Docker
 
-[![Build Status](https://api.travis-ci.org/bwv988/docker-zeppelin.svg?branch=master)](https://api.travis-ci.org/bwv988/docker-zeppelin.svg?branch=master)
+[![Build Status](https://api.travis-ci.org/bwv988/docker-zeppelin.svg?branch=master)](https://travis-ci.org/bwv988/docker-zeppelin)
 
 ## About
 
@@ -8,7 +8,7 @@ Run Apache Zeppelin in a docker environment.
 
 This is based on the Spark docker images for data science.
 
-Check out <https://github.com/bwv988/datascience-docker-sandbox> for further usage examples.
+Check out <https://github.com/bwv988/datascience-playground> for usage examples.
 
 ## Version
 

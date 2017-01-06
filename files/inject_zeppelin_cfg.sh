@@ -1,7 +1,4 @@
 #!/bin/bash
-
-export SPARK_VERSION=2.0.0
-export SPARK_HOME=/opt/spark-$SPARK_VERSION
 export ZEPPELIN_HOME=/opt/zeppelin
 
 # Look for SPARK config settings in the environment.

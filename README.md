@@ -12,4 +12,4 @@ Check out <https://github.com/bwv988/datascience-playground> for usage examples.
 
 ## Version
 
-Apache Zeppelin 0.6.1 with all interpreters.
+Apache Zeppelin 0.7.2 with all interpreters.

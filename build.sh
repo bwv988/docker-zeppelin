@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMGPREFIX=bwv988
-IMGNAME=docker-zeppelin
+IMGNAME=zeppelin
 IMG="${IMGPREFIX}/${IMGNAME}"
 
 echo -e "Building docker image ${IMG}..."

@@ -15,4 +15,4 @@ after_success:
   - echo "Pushing Docker images to Docker Hub..."
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
   - ./build.sh
-  - docker push bwv988/docker-zeppelin
+  - docker push bwv988/zeppelin

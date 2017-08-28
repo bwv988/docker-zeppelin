@@ -12,7 +12,7 @@ MAINTAINER ralph.schlosser@gmail.com
 # Environment variables.
 ENV MAVEN_VERSION=3.3.9
 ENV ZEPPELIN_VERSION=0.7.2
-ENV RSCALA_VERSION=2.2.2
+#ENV RSCALA_VERSION=2.2.2
 ENV SCALA_BINARY_VERSION=2.10.6
 ENV RSCALA_DL_URL=https://cran.r-project.org/src/contrib/rscala_${RSCALA_VERSION}.tar.gz
 ENV ZEPPELIN_HOME=/opt/zeppelin
@@ -41,9 +41,9 @@ RUN set -x \
   && curl -sL -k --retry 3 "$SCALA_DL_URL" \
   | gunzip \
   | tar x -C /opt/ \
-  && curl -k ${RSCALA_DL_URL} -o /opt/rscala.tar.gz \
-  && R CMD INSTALL /opt/rscala.tar.gz \
-  && rm /opt/rscala.tar.gz \
+  #&& curl -k ${RSCALA_DL_URL} -o /opt/rscala.tar.gz \
+  #&& R CMD INSTALL /opt/rscala.tar.gz \
+  #&& rm /opt/rscala.tar.gz \
   && curl -kfSL "$ZEPPELIN_DL_URL" -o /tmp/zeppelin.tar.gz \
   && tar -xvf /tmp/zeppelin.tar.gz -C /opt/ \
   && rm /tmp/zeppelin.tar.gz* \
